@@ -1,0 +1,36 @@
+.navbar a , .navbar ul a{
+    color: #666;
+}
+.navbar ul a:hover{
+    color: #ff3838;
+}
+
+.gallery .gallery-item{
+    position: relative;
+}
+.gallery .gallery-item .gallery-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(221, 213, 213, 0.42);
+    color:#000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+}
+.gallery .gallery-item:hover .gallery-content{
+    opacity: 1;
+    visibility: visible;
+}
+.top{
+    width: 50px;
+    height: 50px;
+    line-height: 2.8;
+    bottom: 40px;
+    right: 30px;
+    position: fixed;
+}
